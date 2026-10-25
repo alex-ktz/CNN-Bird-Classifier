@@ -1,0 +1,4 @@
+AlexanderKatz,LironSchaefer
+332391077,206640120
+
+This submission utilizes a custom 5-block VGG-style CNN architecture designed to extract fine-grained visual features across 20 bird species. To ensure maximum robustness and prevent the model from memorizing background context, we integrated on-the-fly data augmentations in our transform pipeline—specifically ColorJitter, RandomAffine, and RandomHorizontalFlip—over a 10-epoch training run. This strategy effectively prevented overfitting to the training environments, allowing the model to generalize well and achieve a final test set accuracy of 58.4%.
